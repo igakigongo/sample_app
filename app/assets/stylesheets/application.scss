@@ -21,6 +21,7 @@
 /* mixins, variables, etc.*/
 $open-sans-condensed: "Open Sans Condensed", sans-serif;
 $roboto-condensed: "Roboto Condensed", sans-serif;
+$state-danger-text: #ff0000;
 $gray: #555;
 $gray-dark: #222;
 
@@ -59,6 +60,21 @@ footer {
   }
 }
 
-img {
-  display: none;
+.gravatar {
+  border-radius: 50%;
+}
+
+#error_explanation {
+  color: $state-danger-text;
+  ul {
+    color: inherit;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  input {
+    border: 1px solid $state-danger-text;
+    color: $state-danger-text;
+  }
 }
