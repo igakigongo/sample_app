@@ -32,3 +32,4 @@
 
 # Ignore spring files
 /spring/*.pid
+.idea/*
